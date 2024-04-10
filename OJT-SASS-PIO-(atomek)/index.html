@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ametok</title>
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<!-- LOADER TRY -->
+    <div class="loader"></div>
+
+<!-- BLOCK HEADER -->
+<section class="blockheader">
+    <div class="container">
+        <div class="blockheader__wrapper">
+            <div class="vl"></div>
+            <p>FROM THE BLOG</p>
+                <h2>News & Articles
+                </h2>
+        </div>
+    </div>
+</section>
+
+
+<!-- PARALAX VIDEO WITH BTN PIO -->
+<section class="parallax">
+    <div class="video" onclick="toggleVideo()">
+        <div class="play-btn">
+        <i class="fa-solid fa-play"></i>
+        </div>
+    <!-- Container for the YouTube video -->
+<div id="youtube-video-container">
+    <iframe id="youtube-video" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+</div>
+        <div class="title1">
+            <h2>Great Experience For Building <br> Construction & Industry</h2>
+        </div>
+    </div>
+    
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container">
+        <div class="cta__wrapper">
+            <div class="cta__logo">
+                <i class="fa-brands fa-instalod"></i>
+            </div>
+            <h2>Quality, Affordable, Manufacturing and Industrial Services</h2>
+            <button class="btn2">Discover More</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- SLIDER HOPLON -->
+<!-- Set up your HTML -->
+<div class="container2">
+<div class="owl-carousel">
+    <div> <img src="./photo/partner-logo.png" alt="image" class="card__img"> </div>
+    <div> <img src="./photo/partner-logo.png" alt="image" class="card__img"> </div>
+    <div> <img src="./photo/partner-logo.png" alt="image" class="card__img"> </div>
+    <div> <img src="./photo/partner-logo.png" alt="image" class="card__img"> </div>
+    <div> <img src="./photo/partner-logo.png" alt="image" class="card__img"> </div>
+    <div> <img src="./photo/partner-logo.png" alt="image" class="card__img"> </div>
+    <div> <img src="./photo/partner-logo.png" alt="image" class="card__img"> </div>
+  </div>
+</div>
+
+
+<!-- LINKS FOOTER -->
+<section class="linkf">
+    <div class="container">
+        <div class="linkf__wrapper">
+            <div class="linkf__col">
+                <h3>title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nam quis expedita maiores ipsum mollitia cum esse fuga quasi error.</p>
+                <button>btn</button>
+            </div>
+            <div class="linkf__col">
+                <h3>title</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Meet Our Team</a></li>
+                    <li><a href="#">News & Media</a></li>
+                    <li><a href="#">Our Projects</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="linkf__col">
+                <h3>title</h3>
+                <ul class="linkf__det">
+                    <li class="border"><i class="fa-solid fa-location-dot"></i> 88 Broklyn Golden Street, New York</li>
+                    <li class="border"><i class="fa-solid fa-clock"></i> Mon - Sat 8:00 - 6:30, Sunday - CLOSED</li>
+                    <li class="border"><i class="fa-solid fa-envelope"></i> needhelp@company.com</li>
+                    <li><i class="fa-solid fa-phone"></i> 92 666 888 0000</li>
+                </ul>
+            </div>
+            <div class="linkf__col">
+                <h3>title</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo cum quam reiciendis corporis at sequi soluta beatae eligendi dolores ut.</p>
+                <form action="">
+                    <input type="text" placeholder="Enter your Email"/>
+                </form>
+                <ul class="socials">
+                    <li><i class="fa-brands fa-square-twitter"></i></li>
+                    <li><i class="fa-brands fa-square-facebook"></i></li>
+                    <li><i class="fa-brands fa-square-pinterest"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <h5>© All Copyright 2021 by <span>Company.com</span></h5>
+            <ul>
+                <li><a href="#">things /</a></li>
+                <li><a href="#"> things /</a></li>
+                <li><a href="#"> things </a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+ //loader
+ window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+//youtube-video
+function toggleVideo() {
+        var videoContainer = document.getElementById('youtube-video-container');
+        // Toggle the display property of the video container
+        if (videoContainer.style.display === 'none') {
+            videoContainer.style.display = 'block';
+        } else {
+            videoContainer.style.display = 'none';
+        }
+    }
+</script>
+
+<!-- owlslider js Pio -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      pullDrag:true,
+      itemsDesktop: [1199,10],
+   itemsDesktopSmall: [980,9],
+   itemsTablet: [768,5],
+   itemsTabletSmall: false,
+   itemsMobile: [479,4],
+      responsive:{
+          0:{
+              items:2
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:5
+          }
+      }
+  })
+  </script>
+
+</body>
+</html>
