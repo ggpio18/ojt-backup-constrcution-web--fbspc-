@@ -1,0 +1,19 @@
+@use '../abstract/' as *;
+
+.card__info{
+    margin-bottom: .5rem 0 1rem 0;
+    opacity: 0.5;
+    @include flex(space-between,center);
+    ul{
+        @include flex(flex-start, center);
+        gap: .5rem;
+        
+        li, small{
+            font-size: 1.2rem;
+            line-height: 0;
+        }
+        i{
+            font-size: .3rem;
+        }
+    }
+}
