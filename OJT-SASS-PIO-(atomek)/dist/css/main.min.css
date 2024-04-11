@@ -824,13 +824,12 @@ p {
   margin: 0 5px; /* Adjust margin between dots */
   cursor: pointer;
 }
+#owl-one .owl-dot:nth-child(3) {
+  display: none;
+}
 #owl-one .owl-dot:nth-child(4) {
   display: none;
 }
-#owl-one .item2 {
-  margin-bottom: 3rem;
-}
-
 a {
   width: 100%;
   height: 100%;
@@ -845,7 +844,6 @@ a {
   height: 60%;
   padding: 20px 0;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;

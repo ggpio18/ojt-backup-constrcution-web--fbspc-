@@ -50,13 +50,16 @@
         margin: 0 5px; /* Adjust margin between dots */
         cursor: pointer;
     }
+    .owl-dot:nth-child(3){
+        display: none;
+    }
     .owl-dot:nth-child(4){
         display: none;
     }
     
     .item2{
         // margin: -15% 0;
-        margin-bottom: 3rem;
+        // margin-bottom: 3rem;
     }
 }
 
@@ -73,7 +76,7 @@ a{
     height: 60%;
     padding: 20px 0;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
